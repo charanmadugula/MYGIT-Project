@@ -1,0 +1,15 @@
+<apex:page controller="c5">
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockSection >
+<apex:inputField value="{!a.Name}"/><br/>
+<apex:inputfield value="{!a.Industry}"/><br/>
+<apex:inputfield value="{!a.type}"/><br/>
+</apex:pageBlockSection>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!Save}" />
+
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

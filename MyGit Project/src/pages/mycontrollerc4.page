@@ -1,0 +1,15 @@
+<apex:page controller="c4">
+<apex:form >
+<apex:pageBlock title="List of Accounts">
+<apex:commandButton value="Show All Accounts" action="{!showall}" reRender="Mytable"/>
+<apex:commandButton value="Show Direct Accounts" action="{!Direct}" reRender="Mytable"/>
+<apex:pageBlockTable value="{!selectedacts}" var="a" id="Mytable">
+<apex:column value="{!a.Name}"/>
+<apex:column value="{!a.type}"/>
+<apex:column value="{!a.industry}"/>
+<apex:column value="{!a.phone}"/>
+<apex:column value="{!a.fax}"/>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

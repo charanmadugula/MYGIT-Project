@@ -1,0 +1,33 @@
+<apex:page standardController="Payroll__c">
+   <apex:form >
+     <apex:pageBlock title="Employee Payroll Information">
+     <apex:pageBlockButtons >
+          <apex:commandButton action="{!Save}" value="Save"/>
+          <apex:commandButton action="{!Cancel}" value="Cancel"/>
+          <apex:commandButton action="{!Delete}" value="Delete"/>
+          <apex:commandButton action="{!Edit}" value="Edit"/>
+          
+     </apex:pageBlockButtons>
+     <apex:pageBlockSection title="Details Below">
+          <apex:pageBlockSection Columns="1">
+             
+             <apex:inputField value="{!Payroll__c.Consultant_Name__c}"/>
+             <apex:inputField value="{!Payroll__c.Employee_ID__c}"/>
+             <apex:inputField value="{!Payroll__c.Hire_Date__c}"/>
+             <apex:inputField value="{!Payroll__c.Salary_Type__c}"/>
+             <apex:inputField value="{!Payroll__c.SSN_Number__c}"/>
+             <apex:inputField value="{!Payroll__c.Employer_Information_Salary_Details__c}"/>
+             
+             
+          
+           </apex:pageBlockSection>
+           
+     </apex:pageBlockSection>
+    </apex:pageBlock>
+
+
+
+
+   </apex:form>
+  
+</apex:page>
