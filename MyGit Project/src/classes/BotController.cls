@@ -30,7 +30,7 @@ public with sharing class BotController {
         try {
             
             if (session != null) {
-                String nextCommand = session.get('nextCommand');
+                String nextCommand = session.get('textCommand');
                 if (nextCommand != null) {
                     Type t = Type.forName('', nextCommand);
                     BotHandler h = (BotHandler)t.newInstance();
